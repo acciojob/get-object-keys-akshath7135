@@ -1,9 +1,9 @@
-const student=[
-	name:"akshath",
-	age:12,
-	city:"vadodara"
-];
-function getKeys(obj){
-	return Object.keys(obj);
+const student={
+	name:"john",
+	age:30,
+	city:"New York"
+};
+Object.prototype.getKeys=function() {
+	return Object.keys(this);
 }
-console.log(getKeys(student));
+console.log(student.getKeys());

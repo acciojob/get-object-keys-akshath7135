@@ -1,7 +1,9 @@
 const student={
-	name:"akshath"
+	name:"akshath",
+	age:12,
+	city:"vadodara"
 }
 function getKeys(obj){
-	return obj.key
+	return Object.keys(obj);
 }
 console.log(getKeys(student));
